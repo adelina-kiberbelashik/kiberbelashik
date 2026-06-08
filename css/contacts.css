@@ -1,0 +1,252 @@
+.contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-item__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--gradient-soft);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-lilac);
+}
+
+.contact-item__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-item__label {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-lilac);
+  margin-bottom: 4px;
+}
+
+.contact-item__value {
+  color: var(--color-deep);
+  font-size: 16px;
+}
+
+.contact-item__value a {
+  color: var(--color-deep);
+}
+
+.contact-item__value a:hover {
+  color: var(--color-lilac);
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(209, 184, 224, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-lilac);
+  transition: all var(--transition);
+}
+
+.social-link:hover {
+  background: var(--color-lilac);
+  color: var(--color-cream);
+  border-color: var(--color-lilac);
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.map-container {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(209, 184, 224, 0.4);
+  min-height: 400px;
+  position: relative;
+  background: var(--gradient-soft);
+}
+
+.map-static {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+.map-static__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(138, 109, 168, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(138, 109, 168, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.map-static__roads {
+  position: absolute;
+  inset: 0;
+}
+
+.map-road {
+  position: absolute;
+  background: rgba(93, 71, 90, 0.15);
+}
+
+.map-road--h {
+  height: 8px;
+  left: 0;
+  right: 0;
+  top: 45%;
+}
+
+.map-road--v {
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: 55%;
+}
+
+.map-road--h2 {
+  height: 6px;
+  left: 10%;
+  right: 30%;
+  top: 70%;
+}
+
+.map-pin {
+  position: absolute;
+  top: 42%;
+  left: 52%;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+  animation: pinBounce 2s ease-in-out infinite;
+}
+
+@keyframes pinBounce {
+  0%, 100% { transform: translate(-50%, -100%); }
+  50% { transform: translate(-50%, calc(-100% - 8px)); }
+}
+
+.map-pin svg {
+  width: 40px;
+  height: 40px;
+  color: var(--color-lilac);
+  filter: drop-shadow(0 4px 8px rgba(42, 26, 42, 0.3));
+}
+
+.map-pin__label {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  white-space: nowrap;
+  background: var(--color-deep);
+  color: var(--color-cream);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.map-static__water {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 80px;
+  height: 60px;
+  background: rgba(138, 109, 168, 0.2);
+  border-radius: 50% 50% 40% 60%;
+}
+
+.map-static__park {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  background: rgba(138, 109, 168, 0.15);
+  border-radius: 50%;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(209, 184, 224, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--color-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(209, 184, 224, 0.5);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 15px;
+  background: var(--color-cream);
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-lilac);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+@media (max-width: 900px) {
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+}

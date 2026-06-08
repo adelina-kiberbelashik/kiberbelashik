@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Продукция KiberBelashik — кремы для рук, лица и тела">
+  <title>Продукция — KiberBelashik</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="#2A1A2A"/>
+          <g transform="translate(50,50)">
+            <path d="M0,-22 L6,-16 L6,-6 L16,-6 L22,0 L16,6 L6,6 L6,16 L0,22 L-6,16 L-6,6 L-16,6 L-22,0 L-16,-6 L-6,-6 L-6,-16 Z" fill="#5D475A" stroke="#8A6DA8" stroke-width="1.2"/>
+            <circle cx="0" cy="0" r="10" fill="#8A6DA8"/>
+            <path d="M0,-6 C-3,-6 -4,-3 -4,0 C-4,4 0,8 0,8 C0,8 4,4 4,0 C4,-3 3,-6 0,-6Z" fill="#F8F4F0"/>
+          </g>
+        </svg>
+        KiberBelashik
+      </a>
+      <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О фабрике</a>
+        <a href="products.html" class="nav__link nav__link--active">Продукция</a>
+        <a href="production.html" class="nav__link">Производство</a>
+        <a href="brandbook.html" class="nav__link">Брендбук</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero" style="background: var(--gradient-soft); padding: 64px 0; text-align: center;">
+      <div class="container">
+        <span class="section__label">Продукция</span>
+        <h1>Кремы с точностью и заботой</h1>
+        <p class="section__subtitle" style="margin-top: 12px;">Технологии и натуральные ингредиенты в каждой формуле</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-group">
+            <span class="filter-group__label">Категория:</span>
+            <button class="filter-btn filter-btn--active" data-filter="category" data-value="all">Все</button>
+            <button class="filter-btn" data-filter="category" data-value="hands">Для рук</button>
+            <button class="filter-btn" data-filter="category" data-value="face">Для лица</button>
+            <button class="filter-btn" data-filter="category" data-value="body">Для тела</button>
+          </div>
+          <div class="filter-group">
+            <span class="filter-group__label">Тип кожи:</span>
+            <button class="filter-btn filter-btn--active" data-filter="skin" data-value="all">Все</button>
+            <button class="filter-btn" data-filter="skin" data-value="dry">Сухая</button>
+            <button class="filter-btn" data-filter="skin" data-value="normal">Нормальная</button>
+            <button class="filter-btn" data-filter="skin" data-value="sensitive">Чувствительная</button>
+          </div>
+          <div class="filter-group">
+            <span class="filter-group__label">Назначение:</span>
+            <button class="filter-btn filter-btn--active" data-filter="purpose" data-value="all">Все</button>
+            <button class="filter-btn" data-filter="purpose" data-value="nourish">Питание</button>
+            <button class="filter-btn" data-filter="purpose" data-value="moisture">Увлажнение</button>
+            <button class="filter-btn" data-filter="purpose" data-value="repair">Восстановление</button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card" data-category="hands" data-skin="dry" data-purpose="nourish">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Classic</span>
+              <img src="images/механик.png" alt="Крем «Механик»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #8A6DA8, #5D475A);">
+                  <span class="product-card__tube-label">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для рук</div>
+              <h3 class="product-card__title">Крем «Механик»</h3>
+              <p class="product-card__desc">Интенсивное питание для сухой и потрескавшейся кожи рук. Формула с касторовым маслом и пчелиным воском.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Касторовое масло</span>
+                <span class="ingredient-tag">Мёд</span>
+                <span class="ingredient-tag">Пчелиный воск</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Технология холодного эмульгирования
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="hands" data-skin="sensitive" data-purpose="moisture">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Gentle</span>
+              <img src="images/ромашка.png" alt="Крем «Ромашка»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #D1B8E0, #8A6DA8);">
+                  <span class="product-card__tube-label">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для рук</div>
+              <h3 class="product-card__title">Крем «Ромашка»</h3>
+              <p class="product-card__desc">Нежный увлажняющий крем с экстрактом ромашки для чувствительной кожи. Без отдушек и красителей.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Ромашка</span>
+                <span class="ingredient-tag">Алоэ вера</span>
+                <span class="ingredient-tag">Ши</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Микроинкапсуляция активов
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="face" data-skin="normal" data-purpose="moisture">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Face</span>
+              <img src="images/рассвет.png" alt="Крем «Лиловый рассвет»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #F8F4F0, #D1B8E0);">
+                  <span class="product-card__tube-label" style="color: #5D475A;">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для лица</div>
+              <h3 class="product-card__title">Крем «Лиловый рассвет»</h3>
+              <p class="product-card__desc">Лёгкий дневной крем с гиалуроновой кислотой и экстрактом лаванды. Матовый финиш, не оставляет жирного блеска.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Гиалуроновая кислота</span>
+                <span class="ingredient-tag">Лаванда</span>
+                <span class="ingredient-tag">Витамин E</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Ламеллярная эмульсия
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="face" data-skin="dry" data-purpose="repair">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Face</span>
+              <img src="images/восстановление.png" alt="Ночной крем «Восстановление»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #5D475A, #2A1A2A);">
+                  <span class="product-card__tube-label">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для лица</div>
+              <h3 class="product-card__title">Ночной крем «Восстановление»</h3>
+              <p class="product-card__desc">Насыщенный ночной уход с маслом ши и пептидами. Восстанавливает барьерную функцию кожи за 8 часов сна.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Масло ши</span>
+                <span class="ingredient-tag">Пептиды</span>
+                <span class="ingredient-tag">Сквалан</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Медленное высвобождение активов
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="body" data-skin="dry" data-purpose="nourish">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Body</span>
+              <img src="images/шелк.png" alt="Крем «Шёлк»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #8A6DA8, #D1B8E0);">
+                  <span class="product-card__tube-label">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для тела</div>
+              <h3 class="product-card__title">Крем «Шёлк»</h3>
+              <p class="product-card__desc">Питательный крем для тела с какао-маслом и экстрактом ванили. Быстро впитывается, оставляя кожу мягкой.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Какао-масло</span>
+                <span class="ingredient-tag">Ваниль</span>
+                <span class="ingredient-tag">Миндальное масло</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Двухфазная эмульсия
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="body" data-skin="normal" data-purpose="moisture">
+            <div class="product-card__image">
+              <span class="product-card__series tag">Серия Body</span>
+              <img src="images/роса.png" alt="Лосьон «Утренняя роса»" class="product-card__photo" loading="lazy" onerror="this.classList.add('product-card__photo--hidden')">
+              <div class="product-card__tube">
+                <div class="product-card__tube-cap"></div>
+                <div class="product-card__tube-body" style="background: linear-gradient(180deg, #D1B8E0, #F8F4F0);">
+                  <span class="product-card__tube-label" style="color: #5D475A;">KB</span>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <div class="product-card__category">Для тела</div>
+              <h3 class="product-card__title">Лосьон «Утренняя роса»</h3>
+              <p class="product-card__desc">Лёгкий увлажняющий лосьон с экстрактом огурца и мочевиной. Идеален для ежедневного применения после душа.</p>
+              <div class="product-card__ingredients">
+                <span class="ingredient-tag">Огурец</span>
+                <span class="ingredient-tag">Мочевина</span>
+                <span class="ingredient-tag">Пантенол</span>
+              </div>
+              <div class="product-card__tech">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg>
+                Наноэмульсия
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="no-results">По выбранным фильтрам ничего не найдено. Попробуйте изменить параметры.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">KiberBelashik</div>
+          <p class="footer__desc">Косметическое предприятие. Точность механизмов. Забота кожи.</p>
+        </div>
+        <div>
+          <div class="footer__title">Навигация</div>
+          <a href="about.html" class="footer__link">О фабрике</a>
+          <a href="products.html" class="footer__link">Продукция</a>
+          <a href="production.html" class="footer__link">Производство</a>
+        </div>
+        <div>
+          <div class="footer__title">Компания</div>
+          <a href="brandbook.html" class="footer__link">Брендбук</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
+        </div>
+        <div>
+          <div class="footer__title">Контакты</div>
+          <a href="mailto:KiberBelashik@mail.com" class="footer__link">KiberBelashik@mail.com</a>
+          <a href="tel:+73471234567" class="footer__link">+7 (347) 123-45-67</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 KiberBelashik. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

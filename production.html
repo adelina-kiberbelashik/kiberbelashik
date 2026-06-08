@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Производство KiberBelashik — от сырья до упаковки">
+  <title>Производство — KiberBelashik</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/production.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" fill="#2A1A2A"/>
+          <g transform="translate(50,50)">
+            <path d="M0,-22 L6,-16 L6,-6 L16,-6 L22,0 L16,6 L6,6 L6,16 L0,22 L-6,16 L-6,6 L-16,6 L-22,0 L-16,-6 L-6,-6 L-6,-16 Z" fill="#5D475A" stroke="#8A6DA8" stroke-width="1.2"/>
+            <circle cx="0" cy="0" r="10" fill="#8A6DA8"/>
+            <path d="M0,-6 C-3,-6 -4,-3 -4,0 C-4,4 0,8 0,8 C0,8 4,4 4,0 C4,-3 3,-6 0,-6Z" fill="#F8F4F0"/>
+          </g>
+        </svg>
+        KiberBelashik
+      </a>
+      <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="about.html" class="nav__link">О фабрике</a>
+        <a href="products.html" class="nav__link">Продукция</a>
+        <a href="production.html" class="nav__link nav__link--active">Производство</a>
+        <a href="brandbook.html" class="nav__link">Брендбук</a>
+        <a href="contacts.html" class="nav__link">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero blueprint-bg" style="padding: 64px 0; text-align: center;">
+      <div class="container">
+        <span class="section__label">Производство</span>
+        <h1>Как создаётся наш крем</h1>
+        <p class="section__subtitle" style="margin-top: 12px;">Шесть точных шагов от сырья до готового продукта</p>
+      </div>
+    </section>
+
+    <section class="section blueprint-bg">
+      <div class="container">
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="process-step__number">1</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 40 L16 16 L24 28 L32 12 L40 24"/><circle cx="24" cy="24" r="20" stroke-dasharray="4 4"/></svg>
+              <h3 class="process-step__title">Подбор сырья</h3>
+              <p class="process-step__text">Каждая партия натуральных масел, восков и экстрактов проходит входной контроль: проверка сертификатов, органолептическая оценка и лабораторный анализ чистоты.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">2</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="12" y="8" width="24" height="32" rx="2"/><path d="M18 16h12M18 24h12M18 32h8"/></svg>
+              <h3 class="process-step__title">Разработка формулы</h3>
+              <p class="process-step__text">Химик-технолог рассчитывает пропорции компонентов с точностью до 0,01 г. Формула тестируется на стабильность, текстуру и эффективность.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">3</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 36 V20 L24 12 L32 20 V36"/><rect x="12" y="36" width="24" height="4"/></svg>
+              <h3 class="process-step__title">Варка и эмульгирование</h3>
+              <p class="process-step__text">Водная и масляная фазы нагреваются до точной температуры, затем соединяются методом холодного или горячего эмульгирования на гомогенизаторе.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">4</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/><path d="M24 16v8l6 4"/><path d="M16 8 L20 12 M32 8 L28 12"/></svg>
+              <h3 class="process-step__title">Охлаждение и созревание</h3>
+              <p class="process-step__text">Эмульсия охлаждается в контролируемых условиях и выдерживается 24 часа для стабилизации структуры — как «обкатка» нового механизма.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">5</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20 h24 v20 h-24 z"/><path d="M16 20 V14 h16 v6"/><circle cx="24" cy="30" r="4"/></svg>
+              <h3 class="process-step__title">Контроль качества</h3>
+              <p class="process-step__text">Каждая партия проходит «техосмотр»: проверка pH, вязкости, микробиологической чистоты и соответствия эталонному образцу.</p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">6</div>
+            <div class="process-step__content">
+              <svg class="process-step__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="18" y="8" width="12" height="28" rx="4"/><path d="M20 8 h8 v-4 h-8 z"/><path d="M14 36 h20"/></svg>
+              <h3 class="process-step__title">Розлив и упаковка</h3>
+              <p class="process-step__text">Готовый крем розливается в стерильные тюбики на автоматической линии. Каждая единица маркируется датой производства и партией.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="quality-block">
+          <svg class="quality-block__icon" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2"><circle cx="40" cy="40" r="30"/><path d="M28 40 l8 8 16-16"/><path d="M40 10 L44 18 L40 14 L36 18 Z" fill="currentColor"/></svg>
+          <div>
+            <h3>Контроль качества — как техосмотр механизмов</h3>
+            <p>Мы относимся к каждой партии крема так же серьёзно, как инженер — к проверке механизма перед запуском. Каждый этап имеет чек-лист, допуски и эталонные образцы. Если хотя бы один параметр не соответствует стандарту — партия не покидает фабрику. Это не бюрократия, а наша философия: точность механизмов, забота кожи.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">KiberBelashik</div>
+          <p class="footer__desc">Косметическое предприятие. Точность механизмов. Забота кожи.</p>
+        </div>
+        <div>
+          <div class="footer__title">Навигация</div>
+          <a href="about.html" class="footer__link">О фабрике</a>
+          <a href="products.html" class="footer__link">Продукция</a>
+          <a href="production.html" class="footer__link">Производство</a>
+        </div>
+        <div>
+          <div class="footer__title">Компания</div>
+          <a href="brandbook.html" class="footer__link">Брендбук</a>
+          <a href="contacts.html" class="footer__link">Контакты</a>
+        </div>
+        <div>
+          <div class="footer__title">Контакты</div>
+          <a href="mailto:KiberBelashik@mail.com" class="footer__link">KiberBelashik@mail.com</a>
+          <a href="tel:+73471234567" class="footer__link">+7 (347) 123-45-67</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 KiberBelashik. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

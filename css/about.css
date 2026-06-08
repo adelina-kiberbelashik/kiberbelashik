@@ -1,0 +1,142 @@
+.page-hero {
+  background: var(--gradient-soft);
+  padding: 64px 0;
+  text-align: center;
+}
+
+.page-hero__slogan {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  color: var(--color-lilac);
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.mission-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(209, 184, 224, 0.4);
+  max-width: 800px;
+  margin: -40px auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+.mission-card p {
+  font-size: 18px;
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+.values-grid .card {
+  text-align: center;
+}
+
+.values-grid .card__icon {
+  margin: 0 auto 20px;
+}
+
+.history-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.history-block__text p {
+  color: var(--color-muted);
+  margin-bottom: 16px;
+}
+
+.history-block__visual {
+  background: var(--gradient-brand);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  color: var(--color-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.history-block__visual::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed rgba(248, 244, 240, 0.2);
+  border-radius: 50%;
+  top: -50px;
+  right: -50px;
+}
+
+.history-block__year {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 800;
+  opacity: 0.3;
+  margin-bottom: 16px;
+}
+
+.history-block__quote {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.team-card {
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-card__avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: var(--gradient-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--color-pastel);
+  overflow: hidden;
+}
+
+.team-card__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.team-card__role {
+  font-size: 13px;
+  color: var(--color-lilac);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.team-card__name {
+  margin-bottom: 12px;
+}
+
+.team-card__desc {
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 768px) {
+  .mission-card {
+    margin-top: 0;
+    padding: 32px 24px;
+  }
+
+  .history-block {
+    grid-template-columns: 1fr;
+  }
+}
